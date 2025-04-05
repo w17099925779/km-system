@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>卡密系统 - GitHub版</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- 卡密生成 -->
+        <div class="card">
+            <h2>🔑 生成卡密</h2>
+            <div class="control-group">
+                <input type="number" id="keyNum" value="5" min="1">
+                <button onclick="generate()" class="main-btn">生成</button>
+            </div>
+            <div id="keyBox" class="key-box"></div>
+        </div>
+
+        <!-- APK注入 -->
+        <div class="card">
+            <h2>📲 注入APK</h2>
+            <div class="file-upload">
+                <input type="file" id="apkFile" accept=".apk" hidden>
+                <label for="apkFile" class="file-btn">选择文件</label>
+                <span id="fileName"></span>
+            </div>
+            <button onclick="startInject()" class="main-btn">开始注入</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

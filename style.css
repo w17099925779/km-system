@@ -1,0 +1,78 @@
+:root {
+    --primary-color: #4CAF50;
+    --gradient: linear-gradient(135deg, #4CAF50, #45a049);
+    --shadow: 0 4px 6px rgba(76, 175, 80, 0.15);
+}
+
+body {
+    background: #f8fff8;
+    font-family: system-ui;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.card {
+    background: white;
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: var(--shadow);
+    margin-bottom: 25px;
+}
+
+.main-btn {
+    background: var(--gradient);
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 24px;
+    cursor: pointer;
+    transition: opacity 0.3s;
+}
+
+.main-btn:active {
+    opacity: 0.8;
+}
+
+.file-upload {
+    margin: 20px 0;
+}
+
+.file-btn {
+    background: var(--primary-color);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.key-box {
+    margin-top: 15px;
+    border-top: 1px solid #eee;
+    padding-top: 10px;
+}
+
+.key-item {
+    font-family: monospace;
+    padding: 8px;
+    margin: 5px 0;
+    background: #f8f8f8;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (max-width: 480px) {
+    .card {
+        padding: 15px;
+    }
+    
+    .main-btn {
+        width: 100%;
+    }
+}
